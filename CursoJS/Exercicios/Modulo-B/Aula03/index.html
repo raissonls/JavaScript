@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de média das notas</title>
+</head>
+
+<style>
+    body{
+        background-color: blueviolet;
+        color: white;
+        font: bolder;
+    }
+</style>
+
+<body>
+    <h1>Calcule a sua média</h1>
+    <p>Ferrameta com objetivos didaticos para informar a média do Aluno</p>
+
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Qual foi a sua nota na P1?"));
+        var n2 = Number.parseFloat(window.prompt("Qual foi a sua nota na P2?"));
+        var n3 = Number.parseFloat(window.prompt("Qual foi a sua nota na P3?"));
+        var n4 = Number.parseFloat(window.prompt("Qual foi a sua nota na P4?"));
+
+
+        
+
+        var média = (n1*1 + n2*2 + n3*2 + n4*4)/(1+2+2+4);
+
+        if (média>=7) {
+            window.alert(`Parabéns você passou sua média foi de ${média} `);
+        } else {
+            window.alert(`Infelizmente você não passou, sua média foi de ${média}`);
+        }
+        
+    </script>
+
+</body>
+</html>
