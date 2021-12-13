@@ -31,8 +31,9 @@
         //Calcula a média ponderada
         var média = (n1*1 + n2*2 + n3*2 + n4*4)/(1+2+2+4);
 
+        var resultado = média>=7?'Aprovado':'Reprovado'; 
         //Verifica se o aluno passou ou não na materia
-        if (média>=7) {
+        if (resultado == 'Aprovado') {
             document.write(`Parabéns você passou sua média foi de ${média.toFixed(2).replace('.',',')} `);
         } else {
             document.write(`Infelizmente você não passou, sua média foi de ${média.toFixed(2).replace('.',',')}`);
