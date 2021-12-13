@@ -20,6 +20,7 @@
     <p>Ferrameta com objetivos didaticos para informar a média do Aluno</p>
 
     <script>
+        //Recebe as informações das Notas
         var n1 = Number.parseFloat(window.prompt("Qual foi a sua nota na P1?"));
         var n2 = Number.parseFloat(window.prompt("Qual foi a sua nota na P2?"));
         var n3 = Number.parseFloat(window.prompt("Qual foi a sua nota na P3?"));
@@ -27,13 +28,14 @@
 
 
         
-
+        //Calcula a média ponderada
         var média = (n1*1 + n2*2 + n3*2 + n4*4)/(1+2+2+4);
 
+        //Verifica se o aluno passou ou não na materia
         if (média>=7) {
-            window.alert(`Parabéns você passou sua média foi de ${média} `);
+            document.write(`Parabéns você passou sua média foi de ${média.toFixed(2).replace('.',',')} `);
         } else {
-            window.alert(`Infelizmente você não passou, sua média foi de ${média}`);
+            document.write(`Infelizmente você não passou, sua média foi de ${média.toFixed(2).replace('.',',')}`);
         }
         
     </script>
