@@ -6,7 +6,12 @@ function Carregar(){
     var hora =data.getHours()
     var min = data.getMinutes()
 
-    msg.innerHTML = `Agora são ${hora}:${min}`
+    if (min<=9) {
+        msg.innerHTML = `Agora são ${hora}:0${min}`
+    } else {
+        msg.innerHTML = `Agora são ${hora}:${min}`    
+    }
+    
 
     if ((hora>=0) & (hora<12)) {
         //BOM DIA
@@ -25,4 +30,10 @@ function Carregar(){
         corpo.style.background = 'rgba(42, 13, 116, 0.856)'
 
     }
+
+    atualização_automatica(60000);
+}
+
+function atualização_automatica(timeoutPeriod){
+	setTimeout("location.reload(true);",timeoutPeriod);
 }
