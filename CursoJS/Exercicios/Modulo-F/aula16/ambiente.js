@@ -22,19 +22,6 @@ function plot_array(array){
     }
 }
 */
-
-let readline = require('readline')
-
-let rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question('Qual o seu nome? ', (name) => {
-  console.log(`Olá, ${name}!`);
-});
-
-/*
 let exemplo = [4,8,9,8,2,1,4,5,7,6]
 
 console.log(exemplo)
@@ -49,4 +36,3 @@ if(posição == -1){
 }else{
     console.log(`Valor esta na posição ${posição}`)
 }
-*/
