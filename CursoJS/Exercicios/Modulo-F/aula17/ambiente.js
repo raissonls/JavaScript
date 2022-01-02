@@ -14,7 +14,7 @@ function fatorial(n){
     }
 }
 
-let numero = 8
+let numero = 40
 console.log(`Numero definido é ${numero}`)
 let fatnumero = fatorial(numero)
 console.log(`Fatorial do numero ${numero} é ${fatnumero}`)
